@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  margin-top: 35px;
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+}
+header .dropdown:hover .dropdown-menu {
+  display: block;
+  border-radius: 0;
+}
+header .userIcons i {
+  font-size: 20px;
+  padding: 0px 15px;
+}
+
+main #blackBox {
+  width: 100%;
+  min-height: 35px;
+  background-color: #222222;
+  color: rgb(200, 200, 200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #blackBox .blackBoxContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main #blackBox .blackBoxContent ul {
+  display: flex;
+  align-items: center;
+  margin: 0 !important;
+}
+main #blackBox .blackBoxContent ul li {
+  border-left: 1px solid rgb(122, 122, 122);
+  border-right: 1px solid rgb(122, 122, 122);
+  padding: 0px 20px;
+}
+main #welcome {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/assets/img/slide-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main #welcome .welcomeText h3 {
+  font-size: 28px;
+}
+main #welcome .welcomeText h1 {
+  font-size: 60px;
+}
+main #welcome .welcomeText button {
+  background-color: #717fe0;
+  border: 0;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+main #welcome .welcomeText button:hover {
+  background-color: #222222;
+}
+main #banner {
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #banner .bannerBox {
+  border: 1px solid rgb(206, 206, 206);
+  width: 100%;
+  position: relative;
+}
+main #banner .bannerBox img {
+  width: 100%;
+}
+main #banner .bannerBox .bannerText {
+  top: 20px;
+  left: 20px;
+  position: absolute;
+}
+main #dataArea .dataText h1 {
+  font-weight: 700;
+  font-size: 30px;
+}
+main #dataArea .dataText .dataButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0px;
+}
+main #dataArea .dataText .dataButtons ul {
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+main #dataArea #container {
+  width: 100%;
+  height: 1050px;
+  overflow-y: auto;
+}
+main #dataArea .card {
+  border: 0;
+  margin-bottom: 15px;
+}
+main #dataArea .card .favAndName {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1px 3px;
+}
+main #dataArea .card .favAndName i {
+  cursor: pointer;
+}
+main #dataArea .card button {
+  border: 1PX solid #E0E0E0;
+  background-color: #E0E0E0;
+  padding: 5px 0px;
+}
+main #dataArea .card button:hover {
+  border: 1px solid green;
+}
+main #dataArea .loadDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #dataArea .loadDiv button {
+  background-color: #E0E0E0;
+  border-radius: 15px;
+  padding: 7px 20px;
+  margin-bottom: 20px;
+  border: 1PX solid #E0E0E0;
+}
+main #dataArea .loadDiv button:hover {
+  border: 1px solid rgb(0, 66, 247);
+}
+
+#dataBasket,
+#formSection {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#dataBasket {
+  align-items: center;
+}
+
+#bskcontainer {
+  width: 100%;
+  height: 500px;
+  overflow-y: auto;
+}
+
+#sortBtn {
+  border: 1PX solid #E0E0E0;
+  background-color: #E0E0E0;
+  padding: 5px 5px;
+}
+#sortBtn:hover {
+  border: 1px solid green;
+}
+
+footer {
+  width: 100%;
+  min-height: 90px;
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+footer span {
+  color: #888888;
+  font-size: 14px;
+}
+footer span a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+  #blackBox {
+    display: none !important;
+  }
+  header {
+    background-color: white !important;
+    margin: 0 !important;
+  }
+  .bannerBox {
+    margin: 10px;
+  }
+  .welcomeText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .welcomeText h3 {
+    font-size: 14px !important;
+  }
+  .welcomeText h1 {
+    font-size: 30px !important;
+  }
+  .dataText h1 {
+    font-size: 15px !important;
+  }
+  .dataText li {
+    font-size: 12px;
+  }
+  footer span {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .dataText {
+    text-align: center;
+  }
+  .dataButtons {
+    flex-direction: column !important;
+  }
+  .logom {
+    width: 100px !important;
+  }
+  footer span {
+    font-size: 8px;
+  }
+}

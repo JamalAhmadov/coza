@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+header {
+    margin-top: 35px;
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+
+    .dropdown {
+        &:hover {
+            .dropdown-menu {
+                display: block;
+                border-radius: 0;
+            }
+        }
+    }
+
+
+    .userIcons {
+        i {
+            font-size: 20px;
+            padding: 0px 15px;
+        }
+    }
+}
+
+
+
+main {
+    #blackBox {
+        width: 100%;
+        min-height: 35px;
+        background-color: #222222;
+        color: rgb(200, 200, 200);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .blackBoxContent {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            ul {
+                display: flex;
+                align-items: center;
+                margin: 0 !important;
+
+                li {
+                    border-left: 1px solid rgb(122, 122, 122);
+                    border-right: 1px solid rgb(122, 122, 122);
+                    padding: 0px 20px;
+                }
+            }
+        }
+
+
+    }
+
+    #welcome {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(/assets/img/slide-01.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .welcomeText {
+
+            h3 {
+                font-size: 28px;
+            }
+
+            h1 {
+                font-size: 60px;
+            }
+
+            button {
+                background-color: #717fe0;
+                border: 0;
+                color: white;
+                padding: 10px 25px;
+                border-radius: 20px;
+
+                &:hover {
+                    background-color: #222222;
+                }
+            }
+        }
+    }
+
+    #banner {
+        width: 100%;
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .bannerBox {
+            border: 1px solid rgb(206, 206, 206);
+            width: 100%;
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+
+            .bannerText {
+                top: 20px;
+                left: 20px;
+                position: absolute;
+
+            }
+        }
+    }
+
+    #dataArea {
+        .dataText {
+            h1 {
+                font-weight: 700;
+                font-size: 30px;
+            }
+
+            .dataButtons {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 15px 0px;
+
+                ul {
+                    display: flex;
+                    gap: 15px;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+
+        }
+
+        #container {
+            width: 100%;
+            height: 1050px;
+            overflow-y: auto;
+
+        }
+
+        .card {
+            border: 0;
+            margin-bottom: 15px;
+
+            .favAndName {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1px 3px;
+
+                i {
+                    cursor: pointer;
+                }
+            }
+
+            button {
+                border: 1PX solid #E0E0E0;
+                background-color: #E0E0E0;
+                padding: 5px 0px;
+
+                &:hover {
+                    border: 1px solid green;
+                }
+            }
+        }
+
+        .loadDiv {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            button {
+                background-color: #E0E0E0;
+                border-radius: 15px;
+                padding: 7px 20px;
+                margin-bottom: 20px;
+                border: 1PX solid #E0E0E0;
+
+                &:hover {
+                    border: 1px solid rgb(0, 66, 247);
+                }
+            }
+        }
+    }
+
+}
+
+#dataBasket,
+#formSection {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#dataBasket {
+    align-items: center;
+}
+
+#bskcontainer {
+    width: 100%;
+    height: 500px;
+    overflow-y: auto;
+
+
+}
+
+
+#sortBtn {
+    border: 1PX solid #E0E0E0;
+    background-color: #E0E0E0;
+    padding: 5px 5px;
+
+    &:hover {
+        border: 1px solid green;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    min-height: 90px;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+
+    span {
+        color: #888888;
+        font-size: 14px;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+
+@media screen and (max-width:992px) {
+    #blackBox {
+        display: none !important;
+    }
+ 
+    header {
+        background-color: white !important;
+        margin: 0 !important;
+    }
+    .bannerBox {
+        margin: 10px;
+    }
+
+    .welcomeText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+        h3 {
+            font-size: 14px !important;
+        }
+
+        h1 {
+            font-size: 30px !important;
+        }
+    }
+
+    .dataText {
+        h1 {
+            font-size: 15px !important;
+        }
+
+        li {
+            font-size: 12px;
+        }
+    }
+
+    footer {
+
+        span {
+            font-size: 12px;
+
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .dataText {
+        text-align: center;
+    }
+
+    .dataButtons {
+        flex-direction: column !important;
+
+    }
+
+    .logom{
+        width: 100px !important;
+    }
+    footer {
+
+        span {
+            font-size: 8px;
+
+        }
+    }
+}
